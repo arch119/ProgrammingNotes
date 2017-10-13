@@ -5,3 +5,6 @@
 3. Check status: `git status`. The newly added file is in *modified* state.
 4. Commit the file: `git commit -m "added file"`
 5. To unstage a file `git reset HEAD file`. To unstage all files `git reset HEAD`.
+6. If a staged file is modified, the same file will appear under *staged* and *modified*.
+7. Create a new branch and switch to it : `git checkout -b branch1`.
+8. 
