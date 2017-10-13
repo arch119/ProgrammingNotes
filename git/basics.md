@@ -7,4 +7,5 @@
 5. To unstage a file `git reset HEAD file`. To unstage all files `git reset HEAD`.
 6. If a staged file is modified, the same file will appear under *staged* and *modified*.
 7. Create a new branch and switch to it : `git checkout -b branch1`.
-8. 
+8. See Modified unstaged changes: `git diff` (diffs modified and staged)
+9. See staged changes: `git diff --staged` (diffs staged and last commit)
