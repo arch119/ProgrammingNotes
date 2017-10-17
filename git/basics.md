@@ -1,5 +1,6 @@
 # Git Basics
 
+## Staging / Committing
 1. Initializing a git repo: `git init`
 2. Add an untracked file: `git add file`. The same command is used to *stage* a tracked modified file. 
 3. Check status: `git status`. The newly added file is in *modified* state.
@@ -9,3 +10,11 @@
 7. Create a new branch and switch to it : `git checkout -b branch1`.
 8. See Modified unstaged changes: `git diff` (diffs modified and staged)
 9. See staged changes: `git diff --staged` (diffs staged and last commit)
+10. Push changes to remote: `git push`
+
+## Commit History
+1. Basic: `git log`
+2. See diff of each commit and limit log history to 2: `git log -p -2`
+3. With summary of files modified: `git log --stat`
+4. One line : `git log --oneline`
+5.

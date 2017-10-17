@@ -1,0 +1,4 @@
+{
+    "name": "{{user.name}}",
+    "results": [ {% for item in results %} "{{item.status}}", {% endfor %}]
+}
