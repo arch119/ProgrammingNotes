@@ -17,4 +17,11 @@
 2. See diff of each commit and limit log history to 2: `git log -p -2`
 3. With summary of files modified: `git log --stat`
 4. One line : `git log --oneline`
-5.
+
+
+## Discarding local changes
+1. Discard all local commits to a branch to make the branch identical with remote - ```git reset --hard @{u}```
+
+## Git Merge/Rebase
+1. Git rebase master onto a branch (assuming the branch is checked out ) - ```git rebase master```
+2. Pushing changes to remote branch after rebase. Since rebase changes the branch history, can't simply push changes to it. So need to force a push ```git push -f```. Don't do it if it's a shared branch.
