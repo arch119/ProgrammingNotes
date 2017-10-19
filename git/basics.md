@@ -19,9 +19,13 @@
 4. One line : `git log --oneline`
 
 
-## Discarding local changes
-1. Discard all local commits to a branch to make the branch identical with remote - ```git reset --hard @{u}```
+## Discarding changes
+1. Discard all local commits to a branch to make the branch identical with remote - `git reset --hard @{u}`
+2. Revert specific commits i.e. add a new commit that reverts a commmit - `git revert <commit>...`
 
 ## Git Merge/Rebase
-1. Git rebase master onto a branch (assuming the branch is checked out ) - ```git rebase master```
-2. Pushing changes to remote branch after rebase. Since rebase changes the branch history, can't simply push changes to it. So need to force a push ```git push -f```. Don't do it if it's a shared branch.
+1. Git rebase master onto a branch (assuming the branch is checked out ) - `git rebase master`
+2. Pushing changes to remote branch after rebase. Since rebase changes the branch history, can't simply push changes to it. So need to force a push `git push -f`. Don't do it if it's a shared branch.
+
+## Git References
+1. `HEAD^n` refers to nth commit before HEAD
